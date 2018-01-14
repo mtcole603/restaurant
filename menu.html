@@ -2,6 +2,31 @@
 <html>
   <head>
     <title>Portsmouth Pub and Grill Menu</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background-color: #d5d2cb; /*in flowers by kinkajou888 - colourlovers.com */
+      }
+      th {
+        font-size: 18px;
+      }
+      #drinkMenu {
+        margin-top: 20px;
+        border: 1px solid;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #drinkMenu th {
+        text-align:left;
+        text-decoration: underline;
+      }
+      #drinkMenu td {
+        padding-top: 10px;
+      }
+      #drinkMenu tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+    </style>
   </head>
   <body>
     <div id="title">
@@ -17,7 +42,7 @@
     </div>
   <hr />
   <div id="menu">
-    <table>
+    <table id="foodMenu">
       <tr>
         <th>Burger and Fries</th>
         <th>Hot Dog and Chips</th>
@@ -39,6 +64,32 @@
         <td>Caesar style with grilled chicken. Side of fresh bread. <br /> $10</td>
         <td>Blackened chicken with lettuce and tomato adn roasted red pepper mayo.  Vinegar-based slaw on the side. <br /> $11</td>
       </tr>
+    </table>
+    <table id="drinkMenu">
+    	<thead>
+    	<tr>
+    		<th>Beverages</th>
+        <th></th>
+    	</tr>
+    	</thead>
+    	<tbody>
+      	<tr>
+      		<td>Root Beer</td>
+      		<td>$3.00</td>
+      	</tr>
+      	<tr>
+      		<td>Bottled Water</td>
+      		<td>$1.25</td>
+      	</tr>
+      	<tr>
+      		<td>Lemonade</td>
+      		<td>$1.00</td>
+      	</tr>
+      	<tr>
+      		<td>Iced Tea</td>
+      		<td>$1.25</td>
+      	</tr>
+    	</tbody>
     </table>
   </div>
   <div id="footer">

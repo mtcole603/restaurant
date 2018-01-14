@@ -1,0 +1,50 @@
+/* Common elements across all pages */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #d5d2cb; /*in flowers by kinkajou888 - colourlovers.com */
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 40px;
+	color: #44749d; /* corporate cobalt byt entitydesigns - colourlovers.com */
+}
+
+h2 {
+	font-size: 25px;
+	line-height: 40px;
+	color: #5b7d87; /* hush by oblivious - colourlovers.com */
+}
+
+hr {
+	border-top: 2px solid #5b7d87; /* hush by oblivious - colourlovers.com */
+	border-bottom: 2px solid #5b7d87;
+}
+
+a {
+     font-family: Helvetica, Arial, sans-serif;
+     font-weight: none;
+}
+
+a:link {
+      color: #44749d; /* corporate cobalt by entitydesign – colourlovers.com */
+      text-decoration: none;
+}
+
+a:hover {
+     color: #8c2238; /* chay33 by annapashmina – colourlovers.com */
+     font-weight: bold;
+}
+
+a:active {
+     color: #8c22328; /* chay33 by annapashmina -colourlovers.com */
+
+}
+
+a:visited {
+    color: #000000;
+}
+
+#navigation {
+    font-size: 25px;
+}
