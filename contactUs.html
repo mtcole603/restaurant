@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Portsmouth Pub and Grill Description</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+      #nameLabel, #emailLabel, #phoneLabel, #reasonLabel {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <div id="title">
@@ -16,16 +22,16 @@
       </p>
     </div>
   <hr />
-  <div id="description">
+  <div id="questions">
     <form action="submit.html" method="POST">
-			<label for="name">Name:</label>
-			<input type="text" id="firstName" name="firstName"><br />
-			<label for="email">Email:</label>
-			<input type="text" id="lastName" name="lastName"><br />
-			<label for="phone">Phone:</label>
-			<input type="text"id="phone" name="phone"><br />
-			<label for="inquiry">Reason for Inquiry:</label>
-  			<select id="contact" name="contact">
+			<label id="nameLabel" for="name">Name:</label>
+			<input type="text" id="firstName" name="firstName" required><br />
+			<label id="emailLabel" for="email">Email:</label>
+			<input type="text" id="lastName" name="lastName" required><br />
+			<label id="phoneLabel" for="phone">Phone:</label>
+			<input type="text"id="phone" name="phone" required><br />
+			<label id="reasonLabel" for="inquiry">Reason for Inquiry:</label>
+  			<select id="contact" name="contact" required>
   				<option value="default" selected>Catering</option>
   				<option value="privateParty">Private Party</option>
   				<option value="feedback">Feedback</option>
