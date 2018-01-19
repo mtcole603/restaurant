@@ -2,6 +2,14 @@
 <html>
   <head>
     <title>Portsmouth Pub and Grill Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- external stylesheet -->
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     <style>
       body {
@@ -29,19 +37,56 @@
     </style>
   </head>
   <body>
+  <div class="container">
     <div id="title">
       <h1>Portsmouth Pub and Grill</h1>
     </div>
   <hr />
-    <div id="navigation">
-      <p>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contactUs.html">Contact Us</a>
-      </p>
-    </div>
+  <div id="navigation">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactUs.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
   <hr />
-  <div id="menu">
+  <div id="menu" class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Burger and Fries</h3>
+        <p>Locally grown, grass fed 1/2 lb. patty grilled to perfection. House fries with your choice of five dipping sauces.<br /> $12</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Hot Dog and Chips</h3>
+        <p>Steamed and grilled; either plain jane, or fully loaded with all the fixings.  You decide.  House-made chips on the side. <br /> $8</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Cajun Wings</h3>
+        <p>Half dozen crispy wings (bone in) served with your choice of glazes: sweet, heat, or inferno. <br /> $9</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Steak Sandwich and Side Salad</h3>
+        <p>Grade A USDA Prime beef, cooked to your preference with chipotle aoli. Side salad. <br /> $12</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Caesar Salad</h3>
+        <p>Caesar style with grilled chicken. Side of fresh bread. <br /> $10</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Grilled Chicken Sandwich and Slaw</h3>
+        <p>Blackened chicken with lettuce and tomato adn roasted red pepper mayo.  Vinegar-based slaw on the side. <br /> $11</p>
+      </div>
+    </div>
+
+    <!-- Old table - Use grid system instead
     <table id="foodMenu">
       <tr>
         <th>Burger and Fries</th>
@@ -64,7 +109,8 @@
         <td>Caesar style with grilled chicken. Side of fresh bread. <br /> $10</td>
         <td>Blackened chicken with lettuce and tomato adn roasted red pepper mayo.  Vinegar-based slaw on the side. <br /> $11</td>
       </tr>
-    </table>
+    </table>  -->
+
     <table id="drinkMenu">
     	<thead>
     	<tr>
@@ -91,6 +137,7 @@
       	</tr>
     	</tbody>
     </table>
+
   </div>
   <div id="footer">
   <hr />
@@ -98,6 +145,7 @@
       12 Main St, Portsmouth, NH, 03801 <br />
       603-555-7890
     </footer>
+  </div>
   </div>
   </body>
 </html>

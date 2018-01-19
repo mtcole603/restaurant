@@ -2,33 +2,97 @@
 <html>
   <head>
     <title>Portsmouth Pub and Grill Description</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- external stylesheet -->
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="title">
-      <h1>Portsmouth Pub and Grill</h1>
+        <!-- Warning message to display only if user has JavaScript disabled -->
+        <div> <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Verpz/Javascript-Disabled-Warning-Popup/c0c51ae674aa9f9018fbbe80f9992fe4e7a88f41/js-warn-min.css"> <input type="checkbox" id="js-hide"/> <div class="js-warn" id="js-warn-exit"><h1>Javascript Is Disabled</h1><p>Javascript seems to be disabled. This will break some site features.</p><p>To enable Javascript click <a href="http://www.enable-javascript.com/" target="_blank">here</a></p><label for="js-hide">Close</label></div><script>var jswarn=document.getElementById("js-warn-exit"); jswarn.parentNode.removeChild(jswarn);</script> </div>
+
+    <div class="container">
+      <div id="title">
+        <h1>Portsmouth Pub and Grill</h1>
+      </div>
+      <hr />
+      <div id="navigation">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="container-fluid">
+        <div style= "text-align: center" id="description">
+          <img class="center-block img-responsive" src="images/foodPhoto.jpg" alt="Photograph of a burger and fries">
+          <br />
+          <p>
+            Welcome to the Portsmouth Pub and Grill!  We pride ourselves on using locally sourced ingredients and serving the best pub fare you've ever had.  Moutwatering burgers and fries, famous cajun style wings and of course an awesome local craft beer selection.  In a hurry?  We also offer take out options.  Need catering?  Give us a call and we'll do the rest.  Stop in today and taste for yourself.  We can't wait to see you!
+          </p>
+          <br />
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- No Indicators are shown
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            -->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <h2>We're opening a new location!</h2>
+              </div>
+
+              <div class="item">
+                <h2>New seasonal menu is available now</h2>
+              </div>
+
+              <div class="item">
+                <h2>Drink of the month: SG Special Brew</h2>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+      <div class="container-fluid">
+          <div class="jumbotron">
+            <h2>We're Expanding!</h2>
+            <p>We've heard you, and we're opening up a second location!  Come find us at the Pease tradeport starting this Summer.  Follow our progress on social media!</p>
+          </div>
+      </div>
+      <div id="footer">
+      <hr />
+        <footer>
+          12 Main St, Portsmouth, NH, 03801 <br />
+          603-555-7890
+        </footer>
+      </div>
     </div>
-  <hr />
-    <div id="navigation">
-      <p>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contactUs.html">Contact Us</a>
-      </p>
-    </div>
-  <hr />
-  <div style= "text-align: center" id="description">
-    <img src="images/foodPhoto.jpg" alt="Photograph of a burger and fries">
-    <p>
-      Welcome to the Portsmouth Pub and Grill!  We pride ourselves on using locally sourced ingredients and serving the best pub fare you've ever had.  Moutwatering burgers and fries, famous cajun style wings and of course an awesome local craft beer selection.  In a hurry?  We also offer take out options.  Need catering?  Give us a call and we'll do the rest.  Stop in today and taste for yourself.  We can't wait to see you!
-    </p>
-  </div>
-  <div id="footer">
-  <hr />
-    <footer>
-      12 Main St, Portsmouth, NH, 03801 <br />
-      603-555-7890
-    </footer>
-  </div>
   </body>
 </html>
