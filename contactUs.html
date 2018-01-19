@@ -2,6 +2,14 @@
 <html>
   <head>
     <title>Portsmouth Pub and Grill Description</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- external stylesheet -->
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     <style>
       #nameLabel, #emailLabel, #phoneLabel, #reasonLabel {
@@ -10,63 +18,72 @@
     </style>
   </head>
   <body>
+  <div class="container">
     <div id="title">
       <h1>Portsmouth Pub and Grill</h1>
     </div>
-  <hr />
+    <hr />
     <div id="navigation">
-      <p>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contactUs.html">Contact Us</a>
-      </p>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactUs.html">Contact Us</a>
+        </li>
+      </ul>
     </div>
-  <hr />
-  <div id="questions">
-    <form action="submit.html" method="POST">
-			<label id="nameLabel" for="name">Name:</label>
-			<input type="text" id="firstName" name="firstName" required><br />
-			<label id="emailLabel" for="email">Email:</label>
-			<input type="text" id="lastName" name="lastName" required><br />
-			<label id="phoneLabel" for="phone">Phone:</label>
-			<input type="text"id="phone" name="phone" required><br />
-			<label id="reasonLabel" for="inquiry">Reason for Inquiry:</label>
-  			<select id="contact" name="contact" required>
-  				<option value="default" selected>Catering</option>
-  				<option value="privateParty">Private Party</option>
-  				<option value="feedback">Feedback</option>
-  				<option value="other">Other</option>
-  			</select>
-        <br />
-        <label for="info">Additional Information:</label>
-			  <textarea id="info"></textarea><br />
-        <p>Have you been to the restaurant?
-          <input type="radio" id="choice2" name="questionnaire" value="no">
-    			<label for="choice2">No</label>
-          <input type="radio" id="choice1" name="questionnaire" value="yes">
-    			<label for="choice1">Yes</label>
-        </p>
-        <p>Best days to contact you:
-          <input type="checkbox" id="choice1" name="bestDaysToContact">
-    			<label for="choice1">M</label>
-          <input type="checkbox" id="choice2" name="bestDaysToContact">
-    			<label for="choice2">T</label>
-          <input type="checkbox" id="choice3" name="bestDaysToContact">
-    			<label for="choice3">W</label>
-          <input type="checkbox" id="choice4" name="bestDaysToContact">
-    			<label for="choice4">Th</label>
-          <input type="checkbox" id="choice5" name="bestDaysToContact">
-    			<label for="choice5">F</label>
-        </p>
-			<input type="submit" name="submit" value="Send Request">
-		</form>
-  </div>
+    <hr />
+    <div id="questions">
+      <form action="submit.html" method="POST">
+  			<label id="nameLabel" for="name">Name:</label>
+  			<input type="text" id="firstName" name="firstName" required><br />
+  			<label id="emailLabel" for="email">Email:</label>
+  			<input type="text" id="lastName" name="lastName" required><br />
+  			<label id="phoneLabel" for="phone">Phone:</label>
+  			<input type="text"id="phone" name="phone" required><br />
+  			<label id="reasonLabel" for="inquiry">Reason for Inquiry:</label>
+    			<select id="contact" name="contact" required>
+    				<option value="default" selected>Catering</option>
+    				<option value="privateParty">Private Party</option>
+    				<option value="feedback">Feedback</option>
+    				<option value="other">Other</option>
+    			</select>
+          <br />
+          <label for="info">Additional Information:</label>
+  			  <textarea id="info"></textarea><br />
+          <p>Have you been to the restaurant?
+            <input type="radio" id="choice2" name="questionnaire" value="no">
+      			<label for="choice2">No</label>
+            <input type="radio" id="choice1" name="questionnaire" value="yes">
+      			<label for="choice1">Yes</label>
+          </p>
+          <p>Best days to contact you:
+            <input type="checkbox" id="choice1" name="bestDaysToContact">
+      			<label for="choice1">M</label>
+            <input type="checkbox" id="choice2" name="bestDaysToContact">
+      			<label for="choice2">T</label>
+            <input type="checkbox" id="choice3" name="bestDaysToContact">
+      			<label for="choice3">W</label>
+            <input type="checkbox" id="choice4" name="bestDaysToContact">
+      			<label for="choice4">Th</label>
+            <input type="checkbox" id="choice5" name="bestDaysToContact">
+      			<label for="choice5">F</label>
+          </p>
+  			<input type="submit" name="submit" value="Send Request">
+  		</form>
+    </div>
+
   <div id="footer">
   <hr />
     <footer>
       12 Main St, Portsmouth, NH, 03801 <br />
       603-555-7890
     </footer>
+  </div>
   </div>
   </body>
 </html>

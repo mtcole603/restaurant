@@ -38,7 +38,6 @@ a:hover {
 
 a:active {
      color: #8c22328; /* chay33 by annapashmina -colourlovers.com */
-
 }
 
 a:visited {
@@ -47,4 +46,12 @@ a:visited {
 
 #navigation {
     font-size: 25px;
+}
+
+.carousel-inner > .item {
+		text-align: center;
+}
+
+.nav-pills > li.active > a, .nav-pills>li.active > a:hover, .nav-pills > li.active > a:focus {
+		background-color: #ffffff;
 }
